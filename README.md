@@ -1,6 +1,7 @@
 # Machine_learning_projet
 Repository created to collaborate on the studying project in the field of Machine learning. 
 
+Le rapport est [ici](https://docs.google.com/document/d/1nFUwdQ7_tfR2HPpY0eWhLwT_WDBs5a3yFTylqUMHdVQ/edit?usp=sharing)
 
 clean_train_dictionary.pkl.zip
 
