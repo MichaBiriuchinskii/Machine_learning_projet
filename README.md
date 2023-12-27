@@ -16,7 +16,7 @@ C'est un dico avec les docs lemmatisés et nettoyés qui a la structure :
 ## Comment traiter pickled dicos ? 
 
 ```python
-rt pickle
+import pickle
 
 # save dictionary to person_data.pkl file
 with open('clean_test_dictionary.pkl', 'wb') as fp:
