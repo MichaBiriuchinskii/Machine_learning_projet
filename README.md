@@ -27,8 +27,15 @@ with open('clean_test_dictionary.pkl', 'wb') as fp:
 
 ```python
 # Read dictionary pkl file
-with open('clean_test_dictionary.pkl', 'rb') as fp:
-    file = pickle.load(fp)
+with open('/Users/Michel/Desktop/TAL/MACHINE_LEARNING?/projet/clean_train_dictionary.pkl', 'rb') as fp:
+    clean_train_dictionary = pickle.load(fp)
 
-file.keys()
+with open('/Users/Michel/Desktop/TAL/MACHINE_LEARNING?/projet/clean_test_dictionary.pkl', 'rb') as fp:
+    clean_test_dictionary = pickle.load(fp)
+
+with open('/Users/Michel/Desktop/TAL/MACHINE_LEARNING?/projet/dirty_train_dictionary.pkl', 'rb') as fp:
+    dirty_train_dictionary = pickle.load(fp)
+
+with open('/Users/Michel/Desktop/TAL/MACHINE_LEARNING?/projet/dirty_test_dictionary.pkl', 'rb') as fp:
+    dirty_test_dictionary = pickle.load(fp)
 ```
