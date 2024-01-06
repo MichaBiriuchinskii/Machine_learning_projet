@@ -1,41 +1,30 @@
-# Machine_learning_projet
-Repository created to collaborate on the studying project in the field of Machine learning. 
+# Défi Fouille de Texte (DEFT) - Analyse de l'appartenance politique des orateurs
 
-Le rapport est [ici](https://docs.google.com/document/d/1nFUwdQ7_tfR2HPpY0eWhLwT_WDBs5a3yFTylqUMHdVQ/edit?usp=sharing)
+Ce répertoire contient le code, les données, et les documents associés à une étude réalisée dans le cadre du cours d'Apprentissage Artificiel portant sur la détermination de l'appartenance politique des orateurs du Défi Fouille de Texte (DEFT).
 
-clean_train_dictionary.pkl.zip
+## Contenu du répertoire
 
-C'est un dico avec les docs lemmatisés et nettoyés qui a la structure : 
+- `corpus/`: Ce dossier contient les fichiers du corpus utilisés pour l'analyse.
+- `images/`: Ce dossier contient les images utilisées dans l'article ou générées par les scripts.
+- `output/`: Ce dossier contient les dictionnaires Python stockés en pickle.
+- `scripts/`: Ce dossier contient tous les scripts utilisés pour la classification et l'analyse des données.
 
-{'data_test_en': array([['text', 'label], ..., ['text', 'label]], dtype='<...'),
+## Article
 
-'data_test_fr': array([['texte', 'label], ..., ['texte', 'label]], dtype='<...'),
-
-'data_test_it': array([['texto', 'labella], ..., ['texto', 'labella]], dtype='<...')}
-
-## Comment traiter pickled dicos ? 
-
-```python
-import pickle
-
-# save dictionary to person_data.pkl file
-with open('clean_test_dictionary.pkl', 'wb') as fp:
-    pickle.dump(dico, fp)
-    print('dictionary saved successfully to file')
-```
+L'article rédigé dans le cadre de cette étude est disponible [ici](Apprentissage_de_classification_par_parti_politique.pdf). Il présente une analyse approfondie de l'appartenance politique des orateurs du DEFT, en utilisant diverses méthodes de classification.
 
 
-```python
-# Read dictionary pkl file
-with open('/Users/Michel/Desktop/TAL/MACHINE_LEARNING?/projet/clean_train_dictionary.pkl', 'rb') as fp:
-    clean_train_dictionary = pickle.load(fp)
+## Références
 
-with open('/Users/Michel/Desktop/TAL/MACHINE_LEARNING?/projet/clean_test_dictionary.pkl', 'rb') as fp:
-    clean_test_dictionary = pickle.load(fp)
+- [DEFT](https://deft.lisn.upsaclay.fr/) - Site officiel du Défi Fouille 
+de Texte.
+- [Édition 2009 - défi](https://deft.lisn.upsaclay.fr/2009/) - DEFT'09, cinquième édition de la campagne d'évaluation en fouille de textes DEFT.
 
-with open('/Users/Michel/Desktop/TAL/MACHINE_LEARNING?/projet/dirty_train_dictionary.pkl', 'rb') as fp:
-    dirty_train_dictionary = pickle.load(fp)
+## Auteurs
 
-with open('/Users/Michel/Desktop/TAL/MACHINE_LEARNING?/projet/dirty_test_dictionary.pkl', 'rb') as fp:
-    dirty_test_dictionary = pickle.load(fp)
-```
+- [Mikhail Biriuchinskii](https://github.com/MichaBiriuchinskii)
+- [Luísa Batista](https://github.com/luisanb)
+- [Alina M.](https://github.com/AlinaMV)
+
+N'hésitez pas à contribuer en ouvrant des issues ou en soumettant des pull requests pour améliorer ce travail.
+
